@@ -1,11 +1,13 @@
 function camelCaseify(input) {
-  return input
-          .toLowerCase()
-          .replace(/_[a-zA-Z]/, (x) => {
-            return x.slice(1).toUpperCase();
-          });
+  return input.toLowerCase().replace(/_[a-zA-Z]/g, (x) => {
+    return x.slice(1).toUpperCase();
+  });
 }
 
-module.exports = {
-  camelCaseify
-};
+try {
+  module.exports = {
+    camelCaseify,
+  };
+} catch (e) {
+  // running on a browser
+}
