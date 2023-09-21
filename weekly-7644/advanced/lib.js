@@ -4,6 +4,10 @@ function sumSeries(n) {
 
 }
 
-module.exports = {
-  sumSeries
-};
+try {
+  module.exports = {
+    sumSeries
+  };
+} catch (e) {
+  // running on a browser
+}
