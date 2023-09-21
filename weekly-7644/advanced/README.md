@@ -1,3 +1,5 @@
+To run the code: [RUNNING.md](RUNNING.md)
+
 # Weekly Coding Challenge #7644
 
 > 19 – 24 September 2023
